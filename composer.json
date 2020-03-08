@@ -1,7 +1,3 @@
 {
-    "name": "tilon-lib/tilonframe",
-    "description": "Telegram bot api for uzbeks",
-    "require": {
-    "php": "^7.0"
-}
+
     }
