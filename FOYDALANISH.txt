@@ -1,0 +1,26 @@
+Ushbu Framework Telegram botlarini php web dasturlash tili orqali tuzish/loyihalash uchun ishlab chiqildi.
+
+t.me/Tilon tomonidan tuzilgan.
+_____________________________
+
+Foydalanish:
+
+1.Kodlarni index.php fayliga joylaysiz.
+2. index.php fayliga kirsangiz ushbu kodga ko'zingiz tushadi:
+______________________________
+require 'TilonLib/functions.php';
+require 'TilonLib/Settings.php';
+require 'TilonLib/Tilon.php';
+
+use Tilon\TilonFrame;
+use Tilon\Settings;
+
+$bot = new TilonFrame(Settings::token);
+$bot->setWebhook("https://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]);
+___________________________
+Ushbu kodni o'chirsangiz tamom botingiz ishlamaydi.Yaxshisi kodlaringizni ushbu kodlardan keyin yozing(index.php faylida misol keltrib ko'rsatilgan).
+3.Bot tokenini TilonLib papkasiga kirsangiz Settings.php fayli bor shu faylning ichida TokenJoyi so'zini o'rniga bot tokenini kiriting va saqlang, keyin saytingizga kodlarni joylang.
+4. Joylaganingizdan keyin index.php fayli qaysi manzilda turgan bo'lsa o'sha manzilga kiring.
+Misol: https://saytnomi.000webhostapp.com/index.php shuni aniqlab brauzer orqali kiring bo'ldi botingiz ishlaydi setwebhook qilishingizni keragi yo'q avtomatik setwebhook bo'ladi.
+-----------------------------
+t.me/Tilon - BotDeveloper{✓}
